@@ -7,13 +7,14 @@ interface Props {
 
 const { post } = Astro.props;
 const { title, description, pubDate, author, image, tags } = post.data;
+const imageWithPrefix = `/kognit/${image}`;
 ---
 
 <article class="group border border-white/[0.06] bg-zinc-950/40 hover:bg-zinc-950/90 rounded-2xl overflow-hidden hover:border-zinc-800 transition-all duration-300 flex flex-col h-full">
   <!-- Article Cover Image -->
-  <a href={`/blog/${post.id}`} class="block overflow-hidden relative aspect-video shrink-0 bg-zinc-900 border-b border-white/[0.04]">
+  <a href={`/kognit/blog/${post.id}`} class="block overflow-hidden relative aspect-video shrink-0 bg-zinc-900 border-b border-white/[0.04]">
     <img 
-      src={image} 
+      src={imageWithPrefix} 
       alt={title} 
       loading="lazy"
       class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
@@ -34,7 +35,7 @@ const { title, description, pubDate, author, image, tags } = post.data;
       </div>
 
       <!-- Title link -->
-      <a href={`/blog/${post.id}`} class="block group/title">
+      <a href={`/kognit/blog/${post.id}`} class="block group/title">
         <h3 class="text-lg font-bold text-white mb-2 leading-snug group-hover/title:text-zinc-200 group-hover:glow-text-hover transition-colors duration-300 font-display">
           {title}
         </h3>
