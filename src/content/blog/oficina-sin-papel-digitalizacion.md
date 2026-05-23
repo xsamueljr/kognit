@@ -2,7 +2,7 @@
 title: "Oficina Sin Papel: La guía definitiva para la digitalización empresarial B2B"
 description: "Una guía práctica sobre cómo estructurar la migración de archivos físicos y flujos de papel analógicos hacia repositorios digitales seguros y automatizados de alto rendimiento."
 pubDate: 2026-05-22
-author: "Elena Rostova"
+author: "Samuel Jiménez Robles"
 image: "/images/blog/oficina-sin-papel.png"
 tags: ["Digitalización", "Oficina Sin Papel", "Transformación Digital", "Eficiencia"]
 ---

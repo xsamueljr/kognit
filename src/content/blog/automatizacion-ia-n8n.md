@@ -2,7 +2,7 @@
 title: "Cómo automatizar el 80% de tus tareas repetitivas con IA y N8N"
 description: "Descubre cómo las empresas B2B están transformando sus operaciones diarias implementando flujos de trabajo inteligentes que conectan sistemas tradicionales con modelos de IA de última generación."
 pubDate: 2026-05-20
-author: "Carlos Mendoza"
+author: "Samuel Jiménez Robles"
 image: "/images/blog/automatizacion-ia.png"
 tags: ["IA", "Automatización", "N8N", "B2B"]
 ---
