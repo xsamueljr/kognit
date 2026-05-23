@@ -1,0 +1,68 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, author, image, tags } = post.data;
+---
+
+<article class="group border border-white/[0.06] bg-zinc-950/40 hover:bg-zinc-950/90 rounded-2xl overflow-hidden hover:border-zinc-800 transition-all duration-300 flex flex-col h-full">
+  <!-- Article Cover Image -->
+  <a href={`/blog/${post.id}`} class="block overflow-hidden relative aspect-video shrink-0 bg-zinc-900 border-b border-white/[0.04]">
+    <img 
+      src={image} 
+      alt={title} 
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+  </a>
+
+  <!-- Card Body -->
+  <div class="p-6 flex flex-col justify-between flex-grow">
+    <div>
+      <!-- Tags list -->
+      <div class="flex flex-wrap gap-2 mb-3">
+        {tags.map((tag) => (
+          <span class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest bg-zinc-900 px-2 py-0.5 rounded border border-white/[0.04]">
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <!-- Title link -->
+      <a href={`/blog/${post.id}`} class="block group/title">
+        <h3 class="text-lg font-bold text-white mb-2 leading-snug group-hover/title:text-zinc-200 group-hover:glow-text-hover transition-colors duration-300 font-display">
+          {title}
+        </h3>
+      </a>
+
+      <!-- Description preview -->
+      <p class="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-6 line-clamp-3">
+        {description}
+      </p>
+    </div>
+
+    <!-- Metadata footer (Author & Date) -->
+    <div class="flex items-center justify-between pt-4 border-t border-white/[0.04] text-[11px] text-zinc-600 font-medium">
+      <div class="flex items-center gap-2">
+        <!-- Minimal Avatar Placeholder -->
+        <div class="h-5 w-5 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-[8px] text-zinc-400 font-mono">
+          {author.charAt(0)}
+        </div>
+        <span>{author}</span>
+      </div>
+      
+      <time datetime={pubDate.toISOString()}>
+        {new Date(pubDate).toLocaleDateString('es-ES', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        })}
+      </time>
+    </div>
+  </div>
+</article>

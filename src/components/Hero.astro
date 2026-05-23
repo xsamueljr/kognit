@@ -1,0 +1,70 @@
+---
+---
+
+<section class="relative flex flex-col items-center justify-center text-center overflow-hidden py-16 md:py-24 lg:py-32 z-10">
+  <!-- Glowing back-effect for modern visual depth -->
+  <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-brand-indigo/10 blur-[100px] rounded-full -z-10" aria-hidden="true"></div>
+  <div class="absolute top-1/4 left-1/4 w-[250px] h-[250px] bg-brand-blue/5 blur-[80px] rounded-full -z-10" aria-hidden="true"></div>
+  
+  <!-- Subtle Tagline -->
+  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.08] bg-zinc-950/80 backdrop-blur-sm mb-6 animate-fade-in">
+    <span class="flex h-2 w-2 rounded-full bg-brand-indigo animate-pulse"></span>
+    <span class="text-xs font-semibold text-zinc-300 uppercase tracking-widest font-display">Automatización Inteligente con IA</span>
+  </div>
+
+  <!-- Giant Headline with gradient detail -->
+  <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl leading-[1.1] mb-6 font-display">
+    Transforma tu empresa con <span class="bg-gradient-to-r from-brand-blue via-brand-indigo to-brand-violet bg-clip-text text-transparent">automatización</span> inteligente.
+  </h1>
+
+  <!-- Persuasive Subtitle -->
+  <p class="text-base sm:text-lg lg:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-10">
+    Diseñamos e implementamos sistemas autónomos de IA y flujos de trabajo digitales B2B que eliminan tareas repetitivas, aceleran tus procesos y escalan tu rendimiento.
+  </p>
+
+  <!-- High-impact CTAs -->
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-4 mb-16">
+    <a 
+      href="#contacto" 
+      class="w-full sm:w-auto relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-semibold text-white rounded-xl group bg-gradient-to-br from-brand-blue via-brand-indigo to-brand-violet hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-brand-blue/30 transition-all duration-300"
+    >
+      <span class="w-full sm:w-auto text-center px-8 py-3.5 transition-all ease-in duration-75 bg-zinc-950 rounded-xl group-hover:bg-opacity-0">
+        Optimiza tu Empresa &rarr;
+      </span>
+    </a>
+    
+    <a 
+      href="#servicios" 
+      class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-zinc-300 transition-all duration-300 bg-zinc-950/60 border border-zinc-800 rounded-xl hover:border-zinc-700 hover:text-white hover:bg-zinc-900/60 active:scale-98"
+    >
+      Explorar Servicios
+    </a>
+  </div>
+
+  <!-- Live interactive mock dashboard element for Vercel visual hierarchy -->
+  <div class="w-full max-w-4xl border border-white/[0.08] bg-zinc-950/50 backdrop-blur-md rounded-2xl p-2.5 shadow-2xl relative">
+    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/5 to-brand-violet/5 opacity-40 rounded-2xl pointer-events-none"></div>
+    <!-- Window controls -->
+    <div class="flex items-center justify-between border-b border-white/[0.06] pb-2.5 px-3">
+      <div class="flex items-center gap-1.5">
+        <span class="h-3 w-3 rounded-full bg-zinc-800"></span>
+        <span class="h-3 w-3 rounded-full bg-zinc-800"></span>
+        <span class="h-3 w-3 rounded-full bg-zinc-800"></span>
+      </div>
+      <div class="text-[10px] text-zinc-600 font-mono tracking-wider">KOGNIT_AI_ENGINE_v2.0</div>
+      <div class="w-10"></div>
+    </div>
+    <!-- Code layout demonstration -->
+    <div class="p-4 sm:p-6 text-left font-mono text-xs sm:text-sm text-zinc-500 overflow-x-auto whitespace-pre">
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">01</span><span class="text-brand-indigo">import</span> &#123; <span class="text-white">KognitAIOrchestrator</span> &#125; <span class="text-brand-indigo">from</span> <span class="text-brand-cyan">"kognit-core"</span>;</div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">02</span></div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">03</span><span class="text-brand-indigo">const</span> <span class="text-white">companyFlow</span> = <span class="text-brand-indigo">new</span> <span class="text-brand-blue">KognitAIOrchestrator</span>(&#123;</div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">04</span>  <span class="text-zinc-400">agency</span>: <span class="text-brand-cyan">"Kognit"</span>,</div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">05</span>  <span class="text-zinc-400">integrations</span>: [<span class="text-brand-cyan">"N8N"</span>, <span class="text-brand-cyan">"OpenClaw"</span>, <span class="text-brand-cyan">"VectorStore"</span>],</div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">06</span>  <span class="text-zinc-400">mode</span>: <span class="text-brand-cyan">"autonomous-ai-agents"</span></div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">07</span>&#125;);</div>
+      <div class="flex items-center gap-3 mb-2"><span class="text-zinc-700 select-none">08</span></div>
+      <div class="flex items-center gap-3"><span class="text-zinc-700 select-none">09</span><span class="text-brand-indigo">await</span> <span class="text-white">companyFlow</span>.<span class="text-brand-violet">executeTransform</span>(&#123; <span class="text-zinc-400">paperless</span>: <span class="text-brand-blue">true</span>, <span class="text-zinc-400">efficiencyBoost</span>: <span class="text-brand-cyan">"80%"</span> &#125;);</div>
+    </div>
+  </div>
+</section>
