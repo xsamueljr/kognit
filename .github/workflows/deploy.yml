@@ -3,9 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '**.md'
-      - '.agents/**'
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'astro.config.mjs'
+      - 'bun.lock'
+      - 'tsconfig.json'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 # Minimal security permissions required to deploy to GitHub Pages
