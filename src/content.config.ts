@@ -9,7 +9,7 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     author: z.string(),
-    image: z.string().default('/fallback_blog.jpg'),
+    image: z.string().default('/fallback_blog.png'),
     tags: z.array(z.string()),
   }),
 });
