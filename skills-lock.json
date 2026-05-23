@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "astro": {
+      "source": "astrolicious/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/astro/SKILL.md",
+      "computedHash": "ebefe26b231d32379c14e41a46c2de7b4b0184543bedab7febdabe4fb21fba4e"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "github-actions-creator": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "skillPath": "cli-tool/components/skills/development/github-actions-creator/SKILL.md",
+      "computedHash": "33387361fa9cacdbcaa6de977e816ca4125e4398faf9bf11b9a0c9ea77a0f004"
+    }
+  }
+}
