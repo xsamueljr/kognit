@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 // Retrieve post props
 const { post } = Astro.props;
 const { title, description, pubDate, author, image, tags } = post.data;
+const imageWithPrefix = `/kognit/${image}`;
 
 // Render markdown content to an Astro Component using the Astro v6 content layer render function
 const { Content } = await render(post);
@@ -26,7 +27,7 @@ const { Content } = await render(post);
 
     <!-- Back Button -->
     <a 
-      href="/blog" 
+      href="/kognit/blog" 
       class="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-white transition-colors duration-300 mb-8 group"
     >
       <svg class="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
@@ -105,7 +106,7 @@ const { Content } = await render(post);
       
       <div>
         <a 
-          href="/blog" 
+          href="/kognit/blog" 
           class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-zinc-400 hover:text-white transition-all duration-300 bg-zinc-950 border border-zinc-800 rounded-lg hover:border-zinc-700"
         >
           &larr; Volver al listado
